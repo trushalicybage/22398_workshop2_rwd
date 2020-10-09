@@ -1,0 +1,299 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*top-header*/
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+/*basic logo*/
+.logo {
+    width: 5%;
+    height: auto;
+}
+/*nav bar*/
+.nav-bar {
+    flex: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.nav-bar a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: darkcyan;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-weight: bold;
+    float: left;
+}
+/* hamberger menu*/
+.menu {
+    width: 60px;
+    position: fixed;
+    right: 0;
+}
+/*section part main*/
+.main {
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quick-links {
+    flex: 10%;
+    margin-top: 10px;
+    background-color: lightgrey;
+}
+
+
+/*article */
+.main-article {
+    flex: 90%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.main-article p {
+    column-count: 4;
+    margin: 20px;
+}
+/*registration form*/
+.reg-form {
+    flex: 90%;
+    margin-top: 10px;
+    height: 79vh;
+}
+
+.reg-form form {
+    margin: 75px;
+}
+
+input [type=text] {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid orchid;
+    margin: 10px;
+}
+
+input[type=submit] {
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*video */
+.video-content {
+    flex: 90%;
+    height: 78vh;
+}
+
+.video-content video {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+/*product*/
+.product-container {
+    flex: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.product {
+    box-shadow: 0 4px 8px 0;
+    margin: 20px;
+}
+
+.product img {
+    width: 70%;
+}
+
+.product button {
+    width: 100%;
+    border: none;
+    background-color: grey;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+/*image*/
+.main-gallery{
+    width:auto;
+
+
+}
+
+    .main-gallery div {
+        margin: 5px;
+       
+        float: left;
+        width: 180px;
+
+      }
+      
+      .main-gallery div:hover {
+        border:   #777;
+      }
+      
+      .main-gallery div img {
+        
+        height: auto;
+      }
+      
+      .main-gallery div desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+
+
+      .main-landing{
+          background-image: url("landing.jpg");
+          width: auto;
+          height: auto;
+          text-align: center;
+
+      }
+       .main-landing h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+    }        
+      
+    
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+   
+  .main-landing form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+  }
+  
+  
+ 
+
+
+ /*footer part*/
+
+
+.main-footer {
+    font-size: 1.6rem;
+    display: flex;
+    width: 100%;
+    color: whitesmoke;
+    background-color: lightblue;
+}
+
+.main-footer div {
+    flex: 33.33%;
+    text-align: center;
+}
+
+.main-footer ul {
+    list-style-type: none;
+}
+
+.main-footer li:first-child {
+    font-weight: bold;
+    border-bottom: 1px solid oldlace;
+}
+/*mobile part*/
+@media only screen and (min-width:0px) and (max-width:500px) {
+    html {
+        font-size: 9px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    /* top header */
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 15%;
+    }
+    /* nav bar */
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .quick-links {
+        display: none;
+    }
+    .main-article p {
+        column-count: 1;
+    }
+    /* main footer of the page  */
+    .main-footer {
+        flex-direction: column;
+    }
+    .reg-form {
+        height: 75vh;
+    }
+    .reg-form form {
+        margin: 10px;
+        margin-top: 50px;
+    }
+    input[type=text] {
+        box-sizing: border-box;
+        margin: 10px;
+    }
+    input[type=submit] {
+        width: 100%;
+    }
+}
+
+
+
+/*tab*/
+
+
+@media only screen and (min-width:501px) and (max-width:700px) {
+    html {
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .logo {
+        width: 15%;
+    }
+    .menu {
+        display: none;
+    }
+    .quick-links {
+        display: none;
+    }
+    .main-article p {
+        column-count: 2;
+    }
+}
+
+
+}
